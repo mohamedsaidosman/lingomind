@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LingoMind</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <label for="subject">Select a Subject:</label>
+      <select id="subject">
+        <option value="animals">Animals</option>
+        <option value="fruits">Fruits</option>
+        <option value="colors">Colors</option>
+        <option value="countries">Countries</option>
+        <option value="sports">Sports</option>
+        <option value="movies">Movies</option>
+        <option value="music">Music</option>
+        <option value="food">Food</option>
+        <option value="nature">Nature</option>
+        <option value="technology">Technology</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <span id="timePerQuestionDisplay"></span>
+    </div>
+
+    <div>
+      <button id="startButton">Start</button>
+    </div>
+
+    <div>
+      <p id="gameDescription">
+        Guess a <span id="wordLengthSpan">__</span>-letter word:
+      </p>
+      <input type="text" id="guess" disabled />
+      <button id="checkGuess" disabled>Submit</button>
+    </div>
+
+    <div id="attempts">Attempts left: 5</div>
+
+    <div id="result">Result:</div>
+    <div id="timer">Time left:</div>
+    <div id="wordLength">Word Length:</div>
+
+    <!-- Add a section to display the answer -->
+    <div id="answerSection" style="display: none;">
+      <p>The word was: <span id="answer"></span></p>
+      <button id="tryAgainButton">Try Again</button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

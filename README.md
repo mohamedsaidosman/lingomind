@@ -1,0 +1,2 @@
+# LingoMind
+Created with CodeSandbox
